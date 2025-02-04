@@ -1,12 +1,12 @@
-toggle := false  ; Initialize the toggle state
+toggle := false
 
-F6::  ; Toggle the space-sending on/off
+F6::
 {
-    toggle := !toggle  ; Toggle the state
+    toggle := !toggle
     if (toggle)
-        SetTimer, SpamSpace, 100  ; Start the timer to run every 100 ms
+        SetTimer, SpamSpace, 100
     else
-        SetTimer, SpamSpace, Off  ; Stop the timer
+        SetTimer, SpamSpace, Off
     return
 }
 
